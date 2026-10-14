@@ -1,0 +1,333 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #333;
+    margin: 0;
+    padding: 25px 15px;
+}
+
+/* Header dan judul */
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h1 {
+    color: #1d4ed8;
+    font-size: 32px;
+    margin: 0 auto 10px;
+}
+
+h2 {
+    color: #1e40af;
+    text-align: center;
+    margin-top: 30px;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Navigasi */
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Konten utama */
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section > p {
+    text-align: center;
+}
+
+/* Form */
+form {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+fieldset {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+legend {
+    color: #1e40af;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+fieldset p {
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+input:not([type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* Tombol */
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #2563eb;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 35px;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    header nav {
+        gap: 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 6px;
+    }
+}
+
+/* Memperbaiki header dan navigasi */
+header {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 25px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    width: 100%;
+    margin: 22px auto;
+}
+
+header nav a {
+    display: inline-block;
+    margin: 0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    background-color: #dbeafe;
+}
+
+/* Form berada di tengah */
+#form-laporan form {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Kotak putih data pelaporan */
+#form-laporan fieldset {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Tulisan Data Pelaporan tetap menyatu dengan kotak */
+#form-laporan legend {
+    background-color: #ffffff;
+    color: #1e40af;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* Label dan input lebih rapi */
+#form-laporan fieldset p {
+    margin: 15px 0 20px;
+}
+
+#form-laporan label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+#form-laporan input:not([type="checkbox"]),
+#form-laporan select,
+#form-laporan textarea {
+    width: 100%;
+}
+
+/* Daftar laporan */
+#daftar-laporan {
+    width: 100%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+#daftar-laporan table {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#daftar-laporan th {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+#daftar-laporan th,
+#daftar-laporan td {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    #form-laporan fieldset {
+        padding: 16px;
+    }
+
+    header nav {
+        gap: 10px;
+    }
+
+    #daftar-laporan {
+        overflow-x: auto;
+    }
+}
+#form-laporan fieldset {
+    background: #ffffff !important;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 30px 25px 25px !important;
+    margin-top: 15px !important;
+}
+#form-laporan fieldset legend {
+    display: table;
+    background: #ffffff !important;
+    color: #1e40af;
+    font-weight: bold;
+    padding: 0 12px;
+    margin-left: 10px;
+    position: relative;
+    top: 0;
+}
+#form-laporan fieldset > p:first-of-type {
+    margin-top: 20px !important;
+}
+#form-laporan fieldset {
+    padding-top: 30px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+#form-laporan legend {
+    background-color: #ffffff;
+    padding: 0 12px;
+    margin-left: 12px;
+    color: #1e40af;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+}
